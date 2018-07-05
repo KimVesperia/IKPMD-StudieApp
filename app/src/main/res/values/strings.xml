@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">StudieApp</string>
+
+    <array name="year">
+        <item>Studiejaar 1</item>
+        <item>Studiejaar 2</item>
+        <item>Studiejaar 3</item>
+        <item>Studiejaar 4</item>
+    </array>
+
+    <array name="yeardefault1">
+        <item>Studiejaar 1</item>
+    </array>
+
+    <array name="yeardefault2">
+        <item>Studiejaar 2</item>
+    </array>
+
+    <array name="yeardefault3">
+        <item>Studiejaar 3</item>
+    </array>
+
+    <array name="yeardefault4">
+        <item>Studiejaar 4</item>
+    </array>
+
+    <array name="yeardefault5">
+        <item>Studiejaar 3</item>
+        <item>Studiejaar 4</item>
+    </array>
+
+    <array name="yeardefault6">
+        <item>Studiejaar 2</item>
+        <item>Studiejaar 3</item>
+        <item>Studiejaar 4</item>
+    </array>
+
+    <array name="semester">
+        <item>P1 - P2</item>
+        <item>P2 - P3</item>
+        <item>P3 - P4</item>
+    </array>
+
+    <array name="period">
+        <item>P1</item>
+        <item>P2</item>
+        <item>P3</item>
+        <item>P4</item>
+    </array>
+
+    <array name="special">
+        <item>Specialisatievak</item>
+    </array>
+
+    <array name="special1">
+        <item>Keuzevak</item>
+    </array>
+
+    <array name="special2">
+        <item>Minor</item>
+    </array>
+
+    <array name="special3">
+        <item>Stage</item>
+    </array>
+
+    <array name="status">
+        <item>Ingeschreven</item>
+        <item>Gehaald</item>
+        <item>Herkansen</item>
+    </array>
+
+    <array name="status1">
+        <item>Herkansen</item>
+    </array>
+
+</resources>

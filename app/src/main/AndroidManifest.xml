@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kimv.loginregister">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CourseListYear1Activity"
+            android:label="Studiejaar 1" />
+        <activity
+            android:name=".CourseListYear2Activity"
+            android:label="Studiejaar 2" />
+        <activity
+            android:name=".CourseListYear3Activity"
+            android:label="Studiejaar 3" />
+        <activity
+            android:name=".CourseListYear4Activity"
+            android:label="Studiejaar 4" />
+        <activity
+            android:name=".CourseListExtraActivity"
+            android:label="Keuzevakken" />
+        <activity
+            android:name=".CourseListMinorsActivity"
+            android:label="Minors" />
+        <activity
+            android:name=".CourseListInternsActivity"
+            android:label="Stages" />
+        <activity
+            android:name=".AddCourse1Activity"
+            android:label="Jaar 1 - Vak Toevoegen" />
+        <activity
+            android:name=".AddCourse2Activity"
+            android:label="Jaar 2 - Vak Toevoegen" />
+        <activity
+            android:name=".AddCourse3Activity"
+            android:label="Jaar 3 - Vak Toevoegen" />
+        <activity
+            android:name=".AddCourse4Activity"
+            android:label="Jaar 4 - Vak Toevoegen" />
+        <activity
+            android:name=".AddCourseExtraActivity"
+            android:label="Keuzevak Toevoegen" />
+        <activity
+            android:name=".AddCourseMinorActivity"
+            android:label="Minor Toevoegen" />
+        <activity
+            android:name=".AddCourseInternActivity"
+            android:label="Stage Toevoegen" />
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+
+        <activity android:name=".ProfileYearActivity" />
+
+    </application>
+
+</manifest>
