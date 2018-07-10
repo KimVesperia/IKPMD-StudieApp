@@ -168,14 +168,16 @@
         android:orientation="horizontal"
         >
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/buttonUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="25dp"
-            android:text="Aanpassen" />
+            android:text="Aanpassen"
+            android:textColor="#FFF"
+            app:backgroundTint="#FF009688"/>
 
         <View
             android:layout_width="0dp"
@@ -183,14 +185,16 @@
             android:layout_weight="1"
             />
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="25dp"
-            android:text="Verwijder" />
+            android:text="Verwijder"
+            android:textColor="#FFF"
+            app:backgroundTint="#dc3545"/>
 
     </LinearLayout>
 

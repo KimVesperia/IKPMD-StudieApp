@@ -10,10 +10,32 @@
     android:paddingBottom="10dp"
     tools:context=".CourseListYear1Activity">
 
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="1dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            tools:layout_centerVertical="true"
+            tools:layout_centerHorizontal="true">
+
 
     <TextView
         android:id="@+id/textViewName"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#FF009688"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -33,7 +55,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Jaar:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -59,7 +81,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="EC:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -85,7 +107,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Cijfer:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -111,7 +133,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Soort Module:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -137,7 +159,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Status:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -163,7 +185,7 @@
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Notities:   "
-            android:textColor="@android:color/black"
+            android:textColor="#FF009688"
             android:textStyle="bold" />
 
         <TextView
@@ -175,5 +197,7 @@
 
     </LinearLayout>
 
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

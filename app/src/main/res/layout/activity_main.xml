@@ -3,6 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingBottom="10dp" tools:context=".MainActivity">
 
@@ -13,18 +14,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
         <TextView
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF009688"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_gravity="center_horizontal"
             android:text="Registreer" />
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_centerVertical="true"
+                tools:layout_centerHorizontal="true">
 
         <EditText
             android:layout_margin="15dp"
             android:inputType="textEmailAddress"
             android:hint="Enter je username"
+            android:textColor="#FF009688"
             android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -33,6 +65,7 @@
             android:layout_margin="15dp"
             android:inputType="textEmailAddress"
             android:hint="Enter je email"
+            android:textColor="#FF009688"
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -40,17 +73,23 @@
         <EditText
             android:layout_margin="15dp"
             android:inputType="textPassword"
+            android:textColor="#FF009688"
             android:hint="Enter je wachtwoord"
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
+         <android.support.v7.widget.AppCompatButton
             android:layout_margin="15dp"
             android:id="@+id/buttonRegister"
             android:text="Registreren"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            app:backgroundTint="#FF009688"/>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_margin="15dp"

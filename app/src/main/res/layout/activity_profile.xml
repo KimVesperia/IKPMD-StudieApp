@@ -5,64 +5,131 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:paddingTop="10dp"
     android:orientation="vertical"
     android:paddingBottom="10dp"
     tools:context=".ProfileActivity">
 
-    <LinearLayout
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_centerVertical="true"
-        tools:layout_centerHorizontal="true">
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageView"
+    <Button
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Change Me"
+        android:textSize="10dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_gravity="center"/>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/card_view2"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp"-->
+        <!--card_view:cardCornerRadius="4dp"-->
+        <!--card_view:cardBackgroundColor="#FF009688"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--card_view:cardElevation="5dp">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--tools:layout_centerVertical="true"-->
+            <!--tools:layout_centerHorizontal="true">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textViewUserEmail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="15dp"
+        android:elevation="1dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:src="@drawable/myimage"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_centerVertical="true"
+            tools:layout_centerHorizontal="true">
 
-        <TextView
-            android:id="@+id/textViewUserEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_gravity="center_horizontal" />
+            <!--<Button-->
+                <!--android:id="@+id/buttonCourseYear"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:text="Studievakken" />-->
 
-        <Button
-            android:id="@+id/buttonCourseYear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Studievakken" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonCourseYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Studievakken"
+                android:textColor="#FFF"
+                app:backgroundTint="#FF009688"/>
 
-        <Button
-            android:id="@+id/buttonMinors"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Minors" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonMinors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Minors"
+                android:textColor="#FFF"
+                app:backgroundTint="#FF009688"/>
 
-        <Button
-            android:id="@+id/buttonInterns"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="STAGES" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonInterns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="STAGES"
+                android:textColor="#FFF"
+                app:backgroundTint="#FF009688"/>
 
-        <Button
-            android:layout_margin="15dp"
-            android:id="@+id/buttonLogout"
-            android:text="Uitloggen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton
+                android:layout_margin="15dp"
+                android:id="@+id/buttonLogout"
+                android:text="Uitloggen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                app:backgroundTint="#FF009688"/>
+
+
     </LinearLayout>
-
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
